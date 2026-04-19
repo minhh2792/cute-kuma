@@ -444,7 +444,7 @@ div > .alert-heading.p-2:has(*) {
   gap: var(--spacing-8);
   margin-top: var(--spacing-4);
 }
-.extra-info:not(:has(div)) {
+.extra-info:not(:has(.tag-wrapper)) {
   margin-top: 0;
   margin-bottom: 0;
 }
