@@ -157,9 +157,6 @@ a:not(.btn):focus-visible {
 /* Fix vertical margin of admin buttons on mobile */
 .main > div:has(> [data-testid="edit-button"]) > div {
   margin-bottom: var(--spacing-32) !important;
-}
-
-.main > div:has(> [data-testid="edit-button"]) > div {
   display: flex;
   flex-wrap: wrap;
   gap: var(--spacing-8);
@@ -447,7 +444,7 @@ div > .alert-heading.p-2:has(*) {
   gap: var(--spacing-8);
   margin-top: var(--spacing-4);
 }
-.extra-info:empty {
+.extra-info:not(:has(> div)) {
   margin-top: 0;
   margin-bottom: 0;
 }
